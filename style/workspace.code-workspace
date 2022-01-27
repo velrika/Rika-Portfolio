@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\Downloads\\Rika Website"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"editor.linkedEditing": true,
+		"liveServer.settings.multiRootWorkspaceName": "Rika Portfolio"
+	}
+}
