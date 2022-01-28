@@ -30,7 +30,119 @@ body {
 }
 
 header {
-  grid-column: 1/12;
+  grid-column: 1/13;
   margin-top: 145px;
   max-width: 1200px;
+}
+
+main {
+  display: grid;
+  grid-column: 1/13;
+}
+
+.nav {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: grid;
+  grid-row: 1/2;
+  grid-template-columns: repeat(2, 1fr);
+
+  & > p {
+    text-decoration: none;
+    font-size: 18px;
+    color: $brown;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+
+    & > a {
+      padding-right: 5px;
+      font-size: 18px;
+      padding: 0px 49px;
+      text-decoration: none;
+      color: $brown;
+    }
+  }
+}
+
+#market-research {
+  height: auto;
+  display: grid;
+}
+
+.market-content {
+  @include grid-12;
+  grid-template-rows: auto;
+  grid-column: 1/13;
+  grid-row: 2/3;
+  margin-top: 88px;
+}
+
+.pao-image {
+  grid-column: 1/5;
+  grid-row: 1/8;
+}
+
+.pao-image img {
+  object-fit: scale-down;
+  max-width: 322px;
+  min-height: 591px;
+}
+
+.market-star {
+  grid-column: 12/13;
+  grid-row: 3/4;
+}
+
+.market-heading {
+  grid-column: 7/13;
+  grid-row: 4/5;
+  justify-self: end;
+}
+
+.market-heading h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 90px;
+  color: $brown;
+}
+
+.market-text {
+  grid-column: 7/13;
+  grid-row: 6/7;
+}
+
+.market-text p {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: end;
+  font-weight: 300;
+  word-spacing: 0.25em;
+  color: $brown;
+}
+
+.caption-date {
+  grid-column: 2/4;
+  grid-row: 9/11;
+  justify-self: end;
+}
+
+.caption-date p {
+  color: $brown;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+}
+
+.competition-photo {
+  grid-column: 8/13;
+  grid-row: 10/12;
+  justify-self: end;
+}
+
+.competition-photo img {
+  object-fit: scale-down;
+  max-width: 406px;
+  min-height: 210px;
 }
