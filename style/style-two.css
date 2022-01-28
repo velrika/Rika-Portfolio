@@ -75,6 +75,12 @@ main {
   color: #e9dccd;
 }
 
+.nav__right > a:hover {
+  color: #de9e48;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 #ethno-research {
   height: auto;
   display: -ms-grid;
@@ -144,6 +150,7 @@ main {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+  line-height: 1.4em;
   word-spacing: 0.25em;
   color: #e9dccd;
 }

@@ -136,6 +136,7 @@ section {
   text-transform: uppercase;
   color: #2e211a;
   word-spacing: 0.25em;
+  line-height: 1.4em;
   font-size: 16px;
   font-weight: 300;
 }

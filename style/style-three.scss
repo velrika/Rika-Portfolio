@@ -65,6 +65,11 @@ main {
       text-decoration: none;
       color: $brown;
     }
+
+    & > a:hover {
+      color: $yellow;
+      transition-duration: 1s;
+    }
   }
 }
 
@@ -119,7 +124,9 @@ main {
   text-transform: uppercase;
   text-align: end;
   font-weight: 300;
+  font-size: 16px;
   word-spacing: 0.25em;
+  line-height: 1.4em;
   color: $brown;
 }
 

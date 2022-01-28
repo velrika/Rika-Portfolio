@@ -74,6 +74,12 @@ main {
   color: #2e211a;
 }
 
+.nav__right > a:hover {
+  color: #de9e48;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 #market-research {
   height: auto;
   display: -ms-grid;
@@ -152,7 +158,9 @@ main {
   text-transform: uppercase;
   text-align: end;
   font-weight: 300;
+  font-size: 16px;
   word-spacing: 0.25em;
+  line-height: 1.4em;
   color: #2e211a;
 }
 
