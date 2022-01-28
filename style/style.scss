@@ -22,6 +22,10 @@ $yellow: #de9e48;
   box-sizing: border-box;
 }
 
+body {
+  zoom: 60%;
+}
+
 #landing-page {
   height: 100vh;
   @include grid-12;
@@ -283,12 +287,20 @@ h2 {
   }
 }
 
+.star-about {
+  grid-column: 6/8;
+  grid-row: 2/3;
+  justify-self: center;
+  margin-top: 95px;
+}
+
 // bottom section of about page
 .container-about {
   @include grid-12;
   grid-template-rows: auto;
   grid-column: 1/13;
   grid-row: 2/3;
+  margin-top: -300px;
 }
 
 .zero-two {
@@ -343,7 +355,7 @@ h2 {
 }
 
 .about-main {
-  margin-top: 200px;
+  margin-top: 50px;
   @include grid-12;
   grid-template-rows: 150px 100px 200px 100px 100px 50px;
   grid-column: 1/13;
@@ -357,13 +369,6 @@ h2 {
   font-family: 'Cormorant Garamond', serif;
   justify-self: center;
   -webkit-text-stroke: 1px $yellow;
-}
-
-.star-about {
-  grid-column: 6/8;
-  grid-row: 2/3;
-  justify-self: center;
-  margin-top: 95px;
 }
 
 .how-heading {

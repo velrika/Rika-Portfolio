@@ -1,0 +1,32 @@
+/*Variables*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  zoom: 60%;
+  background-color: #f6eee3;
+}
+
+.grid-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-column: 1/12;
+  margin-top: 145px;
+  max-width: 1200px;
+}
+/*# sourceMappingURL=style-two.css.map */

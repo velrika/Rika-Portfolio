@@ -1,0 +1,127 @@
+/*Variables*/
+$brown: #2e211a;
+$light: #e9dccd;
+$cream: #f6eee3;
+$yellow: #de9e48;
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Roboto:wght@300;400&display=swap');
+
+@mixin grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  zoom: 60%;
+  background-color: $cream;
+}
+
+.grid-content {
+  @include grid-12;
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  grid-column: 1/12;
+  margin-top: 145px;
+  max-width: 1200px;
+}
+
+.nav {
+  color: $brown;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: grid;
+  grid-row: 1/2;
+  grid-template-columns: repeat(2, 1fr);
+
+  & > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: $brown;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -40px;
+
+    & > a {
+      padding-right: 5px;
+      font-size: 18px;
+      padding: 0px 49px;
+      text-decoration: none;
+      color: $brown;
+    }
+  }
+}
+
+main {
+  grid-column: 1/12;
+}
+section {
+  @include grid-12;
+}
+
+#data-analysis {
+  height: auto;
+  display: grid;
+  grid-column: 1/13;
+  grid-row: 2/3;
+}
+
+.data-content {
+  @include grid-12;
+  grid-column: 1/13;
+  grid-row: 2/3;
+  grid-template-rows: auto;
+  margin-top: 66px;
+}
+
+.data-heading {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  color: $brown;
+}
+
+.data-text {
+  grid-column: 7/13;
+  grid-row: 1/2;
+  align-self: center;
+  text-align: end;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: $brown;
+  word-spacing: 0.25em;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.data-star {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-top: 35px;
+}
+
+.data-image {
+  grid-column: 7/13;
+  grid-row: 4/5;
+  justify-self: end;
+}
+
+.data-image img {
+  object-fit: scale-down;
+  max-width: 510px;
+  max-height: 246px;
+}
