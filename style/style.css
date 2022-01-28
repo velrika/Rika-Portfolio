@@ -69,11 +69,23 @@ body {
   color: #e9dccd;
 }
 
+.nav__right > a:hover {
+  color: #de9e48;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 .nav__left {
   font-size: 18px;
   padding: 0px 49px;
   text-decoration: none;
   color: #e9dccd;
+}
+
+.nav__left:hover {
+  color: #de9e48;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 main {

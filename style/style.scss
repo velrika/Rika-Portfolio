@@ -64,6 +64,11 @@ body {
       text-decoration: none;
       color: $light;
     }
+
+    & > a:hover {
+      color: $yellow;
+      transition-duration: 1s;
+    }
   }
 
   &__left {
@@ -71,6 +76,10 @@ body {
     padding: 0px 49px;
     text-decoration: none;
     color: $light;
+  }
+  &__left:hover {
+    color: $yellow;
+    transition-duration: 1s;
   }
 }
 main {
